@@ -1,16 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Admin from "./layouts/Admin.js";
+import Auth from './layouts/Auth.js';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import './index.css';
-import App from './App';
+// import './index.css';
+// import App from './Layout/Admin';
 import reportWebVitals from './reportWebVitals';
+
 
 ReactDOM.render(
   <BrowserRouter>
       <Routes>
-        <Route path="/" element={} />
-        <Route path="about" element={} />
+        <Route path="/" element={<Admin/>} />
+        <Route path="admin" element={<Admin/>} />
+        <Route path="auth" element={<Auth/>} />
       </Routes>
   </BrowserRouter>,
   document.getElementById('root')
