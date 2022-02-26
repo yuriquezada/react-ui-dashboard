@@ -3,7 +3,7 @@ import '../App.css';
 
 function Admin() {
   return (
-    <div className="App">
+    <div className="Admin">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
